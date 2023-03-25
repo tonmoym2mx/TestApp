@@ -1,5 +1,7 @@
 name: test_ci
-on: [push]
+on:
+  push:
+  branches: [ master ]
 
 jobs:
   job1:
