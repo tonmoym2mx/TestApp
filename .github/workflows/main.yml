@@ -1,1 +1,8 @@
-name: TEST
+name: Test action
+run-name: ${{ github.actor }} is learning GitHub Actions
+on:[push]
+jobs:
+  runs-on: ubuntu-latest
+  check_a:
+    run: echo hellow world done
+
