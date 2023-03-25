@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -name: complete
-      -run echo completed
+       run: echo completed
 
 
 
