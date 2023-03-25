@@ -1,11 +1,4 @@
-name: CI
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-  workflow_dispatch:
-
+name: test_ci
 jobs:
   lint:
     runs-on: ubuntu-latest
