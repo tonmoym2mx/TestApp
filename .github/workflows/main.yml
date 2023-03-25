@@ -11,11 +11,7 @@ jobs:
         run: echo step2 done
       - name: step3
         run: echo step3 done
-  job2:
-    runs-on: ubuntu-latest
-    steps:
-      -name: complete
-       run: echo completed
+
 
 
 
