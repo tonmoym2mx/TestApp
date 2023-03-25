@@ -1,4 +1,6 @@
 name: test_ci
+on: [push]
+
 jobs:
   lint:
     runs-on: ubuntu-latest
