@@ -2,8 +2,26 @@ name: test_ci
 on: [push]
 
 jobs:
-  lint:
+  job1:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the code
-        run: echo testing done
+      - name: step1
+        run: echo step1 done
+      - name: step2
+        run: echo step2 done
+      - name: step3
+        run: echo step3 done
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      -name: complete
+      -run echo completed
+
+
+
+#on:
+#  push:
+#    branches: [ master ]
+#  pull_request:
+#    branches: [ master ]
+#  workflow_dispatch:
