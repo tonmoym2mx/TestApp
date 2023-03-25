@@ -2,7 +2,7 @@ name: test_ci
 on:
   push:
     branches: [ master ]
-  workflow_dispatch:
+
 
 jobs:
   job1:
