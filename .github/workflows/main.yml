@@ -3,14 +3,17 @@ on:
   push:
     branches: [ master ]
 
-
+permissions: read-all|write-all
 jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v3
-      - name: Provide Persmission
-        run: chmod +x gradlew
       - name: lint check
         run: ./gradlew lintDebug
+      - name: upload lint report
+        uses: actions/upload-artifact@v3
+        with:
+          name: lint.html
+          path: app/build/reports/lint-results-debug.html
