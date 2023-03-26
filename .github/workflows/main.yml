@@ -10,5 +10,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
+      - name: Provide Persmission
+        run: chmod +x gradlew
       - name: lint check
         run: ./gradlew lintDebug
