@@ -8,25 +8,6 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name: step1
-        run: echo step1 done
-      - name: step2
-        run: echo step2 done
-      - name: step3
-        run: echo step3 done
-  job2:
-    needs: [job1]
-    runs-on: ubuntu-latest
-    steps:
-      - name: final_check
-        run: echo done
-
-
-
-
-#on:
-#  push:
-#    branches: [ master ]
-#  pull_request:
-#    branches: [ master ]
-#  workflow_dispatch:
+      - name: checkout
+        usas: actions/checkout@v3
+        run: mkdir tonmoytest
