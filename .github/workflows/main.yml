@@ -9,5 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        usas: actions/checkout@v3
         run: mkdir tonmoytest
